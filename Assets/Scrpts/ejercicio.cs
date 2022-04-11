@@ -19,7 +19,7 @@ public class ejercicio : MonoBehaviour
     void Start()
     {  if (dias < 3)
         {
-            Debug.Log("La cantidad minima de dias es igual o mayor 3");
+            Debug.Log("La cantidad minima de dias es igual o mayor 3, por favor ingrese otro numero de dias");
         }
         else if (codigo == "G")
         {
@@ -48,7 +48,10 @@ public class ejercicio : MonoBehaviour
             resultadopesosPP = resultadoPP / 100 * 80;
             Debug.Log("El costo de la cantidad de gramos es " + resultadopesosPP);
         }
-         
+        else
+        {
+            Debug.Log("Su codigo es invalido, por favor ingrese otro codigo");
+        }
     }
 
     // Update is called once per frame
